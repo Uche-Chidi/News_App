@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 export default function Navbar() {
   return (
@@ -10,7 +12,7 @@ export default function Navbar() {
                     <h1 className='font-extrabold text-4xl'>G.</h1>
                 </Link>
             </div>
-            <div>
+            <div className='hidden md:block'>
                 <ul className='flex flex-row gap-5 cursor-pointer justify-center'>
                     <Link href="/allNews">
                         <li>All News</li>
@@ -20,6 +22,9 @@ export default function Navbar() {
                     <li>Categories</li>
                     <li>About</li>
                 </ul>
+            </div>
+            <div className='md:hidden block'>
+                <GiHamburgerMenu />
             </div>
         </div>
     </section>

@@ -63,15 +63,15 @@ export default function SubSection() {
     <section>
       <div className="container mx-auto p-4 pt-24 pb-20">
         {shuffledArticles.length > 0 && (
-          <div className="flex justify-between gap-x-5 h-[400px]">
+          <div className="flex flex-col md:flex-row justify-between gap-x-5 h-[400px]">
             {shuffledArticles.slice(currentSlide, currentSlide + 3).map((article, index) => (
-              <div key={article.url} className="flex flex-col w-[500px] h-[400px]">
+              <div key={article.url} className="flex flex-row md:flex-col w-[300px] h-[500px]">
                 <Link href={article.url}>
-                <div className="w-full h-[300px]">
+                <div className="w-full h-[300px] flex justify-center items-center text-center">
                   <Image
                     src={article.urlToImage}
                     alt={article.title}
-                    width={500}
+                    width={400}
                     height={300}
                     className="object-cover rounded-lg w-full h-full"
                     />

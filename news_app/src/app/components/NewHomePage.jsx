@@ -71,20 +71,20 @@ export default function Home() {
                   </div>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
                     <div>
-                      <h2 className="font-extrabold text-xl lg:text-2xl mb-2 lg:mb-10">{truncateText(topArticles[currentSlide].title, 70)}</h2>
+                      <h2 className="font-extrabold pt-5 text-xl lg:text-2xl mb-2 lg:mb-10">{truncateText(topArticles[currentSlide].title, 70)}</h2>
                       <a href={topArticles[currentSlide].url} target="_blank" rel="noopener noreferrer" className="text-white my-10 border p-2 lg:p-3 bg-blue-950 hover:bg-gray-300 hover:text-black">
                         Read More
                       </a>
                     </div>
                     <div>
-                      <p className="text-gray-700 mb-4">{truncateText(topArticles[currentSlide].description, 150)}</p>
+                      <p className="text-gray-700 mb-10 mt-5">{truncateText(topArticles[currentSlide].description, 150)}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
                 {nextThreeArticles.length > 0 && (
-                  <div className="border-2 bg-blue-950 text-white p-5 mt-1">
+                  <div className="border-2 bg-blue-950 text-white p-5 mt-10 md:mt-1">
                     <h1 className="font-extrabold text-xl lg:text-3xl mb-4">Other Articles</h1>
                     {nextThreeArticles.map((article, index) => (
                       <div key={article.url || index} className="border-b border-gray-200 pb-4 mb-4">
