@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/app/page.jsx",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/favicon.ico",
+        "dest": "/src/app/favicon.ico"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/src/app/page.jsx"
+      }
+    ]
+  }
+  

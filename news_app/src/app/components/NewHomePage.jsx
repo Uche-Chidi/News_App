@@ -57,6 +57,7 @@ export default function Home() {
       <div className="container mx-auto p-4 pt-24">
         {topArticles.length > 0 && (
           <div className="border-b border-gray-200 pb-4 mb-4">
+            <div><h1 className="text-blue-950 font-extrabold text-3xl"></h1>Future Focus</div>
             <div className="flex flex-col lg:flex-row gap-10">
               <div className="w-full lg:w-[800px] h-[300px] lg:h-[600px]">
                 <div className="grid grid-rows-2 gap-y-5 h-full">
